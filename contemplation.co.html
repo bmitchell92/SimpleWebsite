@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Welcome to the Contemplation Institute</title>
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+</head>
+<body>
+<div id = "main">
+<div id = "bar">
+<div id = "media">
+<h2><a href = "contemplativemedia.com">Contemplative Media    </a></h2>
+</div>
+<div id = "culture">
+<h2><a href = "contemplativeculture.com">Contemplative Culture</a></h2>
+</div>
+<div id = "education">
+<h2><a href = "contemplativeed.com">Contemplative Education</a></h2>
+</div>
+<div id = "tv">
+<h2><a href = "contemplation.tv">Contemplation TV</a></h2>
+</div>
+
+</div>
+<div id = "main2">
+<p align="center"><font face="arial" size="32" color = "white">Welcome to the Contemplation Institute</font></p>
+<a href="javascript:gotoshow()"><img src="oceansunset.jpg" name="slide" border=0 width=300 height=375></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("oceansunset.jpg","ocean.jpg","meditation.jpg","meditation2.jpg","sunset.jpg")
+slideshowlinks("#","http://www.contemplativemedia.com","http://www.contemplativeculture.com","http://www.contemplativeed.com","http://contemplation.tv")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=4000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+</div>
+<div id = "login">
+<form>
+  <h2 align = "center">Login</h2><br>
+  <p align = "center">email address:</p><br>
+  <input type="text" name="=email" size = "40">
+  <br>
+  <p align = "center">password:</p><br>
+  <input type="password" name="password" size = "40">
+  <br>
+  <br>
+  <input type="submit" name="logon" value = "Log in" size = "40">
+  <br>
+  <p align = "center"><a href = "contemplation.co/signup">Sign up</a></p><br>
+</form> 
+</div>
+</div>
+</body>
+</html>

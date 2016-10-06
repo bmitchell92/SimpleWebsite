@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(194,123,251);
+}
+
+h2 {
+    color: white;
+    font-family: Arial;
+}
+
+div#main {
+    background-color: rgb(163,73,163);
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+div#main2 {
+    width: 100%;
+}
+
+div#main2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#bar {
+    width: 100%;
+}
+
+div#bar a{
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+div#media {
+    background-color: rgb(255,0,0);
+    float: left;
+    width: 25%;
+}
+
+div#culture {
+    background-color: rgb(255,0,0);
+    float: left;
+    width: 25%;
+}
+
+div#education {
+    background-color: rgb(255,0,0);
+    float: left;
+    width: 25%;
+}
+
+div#tv {
+    background-color: rgb(255,0,0);
+    float: left;
+    width: 25%;
+}
+
+div#login {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#login input{
+    margin-left = 100px;
+}
+
+div#login p{
+    color: white;
+    font-family: Arial;
+}
+
+div#login input[type=submit] {
+    width: 260px;
+}
